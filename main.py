@@ -44,14 +44,31 @@ def model_prediction(test_image):
 
 # Disease Prevention Measures
 prevention_data = {
-    "Tomato___Early_blight": "🌱 Use copper-based fungicides and avoid overhead watering.",
-    "Tomato___Late_blight": "🌿 Remove infected leaves and use resistant plant varieties.",
-    "Tomato___Leaf_Mold": "💨 Increase air circulation and use sulfur-based sprays.",
-    "Corn_(maize)___Common_rust": "🌽 Apply fungicide and use disease-resistant hybrids.",
-    "Potato___Late_blight": "🥔 Use certified seeds and avoid excessive irrigation.",
-    "Apple___Apple_scab": "🍏 Prune infected branches and apply fungicides.",
-    "Grape___Black_rot": "🍇 Remove infected vines and use protective sprays.",
-    "Pepper,_bell___Bacterial_spot": "🫑 Use copper sprays and plant resistant varieties.",
+    "Tomato___Early_blight": "Use copper-based fungicides and avoid overhead watering.",
+    "Tomato___Late_blight": "Remove infected leaves and use resistant plant varieties.",
+    "Tomato___Leaf_Mold": "Increase air circulation and use sulfur-based sprays.",
+    "Corn_(maize)___Common_rust": "Apply fungicide and use disease-resistant hybrids.",
+    "Potato___Late_blight": "Use certified seeds and avoid excessive irrigation.",
+    "Apple___Apple_scab": "Prune infected branches and apply fungicides.",
+    "Grape___Black_rot": "Remove infected vines and use protective sprays.",
+    "Pepper,_bell___Bacterial_spot": "Use copper sprays and plant resistant varieties.",
+    "Apple___Black_rot": "Remove and destroy infected fruit; apply fungicides at early stages.",
+    "Apple___Cedar_apple_rust": "Remove nearby cedar trees to break the disease cycle; use fungicide sprays.",
+    "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot": "Rotate crops and use resistant hybrids to prevent infection.",
+    "Corn_(maize)___Northern_Leaf_Blight": "Use resistant varieties and apply fungicides at early symptoms.",
+    "Grape___Esca_(Black_Measles)": "Prune infected parts and apply fungicides before bud break.",
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "Ensure proper vineyard sanitation and use fungicidal sprays.",
+    "Orange___Haunglongbing_(Citrus_greening)": "Control psyllid insect populations and remove infected trees.",
+    "Peach___Bacterial_spot": "Use copper-based sprays and plant resistant peach varieties.",
+    "Potato___Early_blight": "Practice crop rotation and use fungicides like chlorothalonil.",
+    "Squash___Powdery_mildew": "Apply sulfur-based sprays and improve air circulation in fields.",
+    "Strawberry___Leaf_scorch": "Avoid overhead watering and remove infected leaves.",
+    "Tomato___Bacterial_spot": "Use disease-free seeds and apply copper sprays during early infection.",
+    "Tomato___Septoria_leaf_spot": "Remove lower leaves to improve airflow; use fungicides if needed.",
+    "Tomato___Spider_mites_Two-spotted_spider_mite": "Introduce natural predators like ladybugs and use neem oil.",
+    "Tomato___Target_Spot": "Apply copper-based fungicides and avoid excessive moisture.",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "Use insect netting to prevent whitefly transmission and plant resistant varieties.",
+    "Tomato___Tomato_mosaic_virus": "Disinfect tools and hands; avoid tobacco products near tomato plants."
 }
 
 # Initialize session state
