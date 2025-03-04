@@ -53,7 +53,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-HISTORY_FILE = "Disease_history.csv"
+HISTORY_FILE = "Crop_disease_histroy.csv"
 
 def save_to_csv(result):
     if os.path.exists(HISTORY_FILE):
