@@ -9,6 +9,19 @@ st.set_page_config(page_title="Plant Disease Recognition 🌱", page_icon="🌿"
 
 # Custom CSS for Styling
 # Custom CSS for Styling & Centering Buttons
+
+st.markdown("""
+    <style>
+        body, .stApp {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .stSidebar {
+            background-color: #1E1E1E;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 st.markdown("""
     <style>
         body {
@@ -117,7 +130,7 @@ app_mode = st.sidebar.radio("Select Page", ["🏠 Home", "ℹ️ About", "🔬 D
 # Home Page
 if app_mode == "🏠 Home":
     st.markdown('<h1 class="main-title">🌱 PLANT DISEASE RECOGNITION SYSTEM 🌱</h1>', unsafe_allow_html=True)
-    st.image("home_page.jpeg", use_container_width=True)
+    st.image("home_page.jpeg", use_column_width=True)
     st.markdown('<h3 style="text-align: center;">🚀 *Upload an image to detect plant diseases!*</h3>', unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center;'>🚀 *Identify plant diseases and get prevention strategies instantly!*</h3>",unsafe_allow_html=True)
 
@@ -137,7 +150,7 @@ elif app_mode == "ℹ️ About":
 ✅ User-friendly Web Interface – Designed for farmers, researchers, and agronomists.\n
 
 🛠 Technology Used\n
-Deep Learning Model: CNN – Optimized for plant disease detection.\n
+Deep Learning Model: MobileNetV2 (CNN) – Optimized for plant disease detection.\n
 Framework: TensorFlow/Keras for AI modeling, OpenCV for image processing.\n
 Web App: Streamlit for an intuitive user experience.\n
 Deployment: Cloud or local-based system for scalability.\n
