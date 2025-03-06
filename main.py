@@ -132,7 +132,7 @@ app_mode = st.sidebar.radio("Select Page", ["🏠 Home", "ℹ️ About", "🔬 D
 # Home Page
 if app_mode == "🏠 Home":
     st.markdown('<h1 class="main-title">🌱 PLANT DISEASE RECOGNITION SYSTEM 🌱</h1>', unsafe_allow_html=True)
-    st.image("home_page.jpeg", use_container_width=True)
+    st.image("home_page.jpeg", use_column_width=True)
     st.markdown('<h3 style="text-align: center;">🚀 *Upload an image to detect plant diseases!*</h3>', unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center;'>🚀 *Identify plant diseases and get prevention strategies instantly!*</h3>",unsafe_allow_html=True)
 
@@ -212,6 +212,7 @@ elif app_mode == "🔬 Disease Recognition":
                 37: "Tomato___healthy"
             }
             
+
             st.session_state.predicted_disease = class_name[result_index]
             st.success(f"🌟 Model predicts: **{st.session_state.predicted_disease}**")
             st.session_state.show_prevention = False  # Reset prevention state
@@ -233,10 +234,18 @@ elif app_mode == "🔬 Disease Recognition":
         if "history" not in st.session_state:
             st.session_state.history = []
 
+        # ✅ Fix: Check if test_image is None before accessing test_image.name
+        image_name = test_image.name if test_image else "Unknown Image"
 
-        result = {"Image": test_image.name,
-                  "Prediction": disease_name,
-                  "Prevention": prevention_text
+        if test_image is not None:
+            result = {"Image": test_image.name}
+        else:
+            st.error("No image uploaded. Please upload an image.")
+
+        result = {
+                    "Image": test_image.name,
+                    "Prediction": disease_name,
+                    "Prevention": prevention_text
                  }
         st.session_state.history.append(result)
         save_to_csv(result)
