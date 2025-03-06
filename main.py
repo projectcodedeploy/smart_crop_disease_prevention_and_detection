@@ -246,7 +246,10 @@ elif app_mode == "🔬 Disease Recognition":
             st.session_state.history = []
 
 
-        result = {"Image": test_image.name,"Prediction": disease_name,"Prevention": prevention_text}
+        result = {"Image": test_image.name,
+                  "Prediction": disease_name,
+                  "Prevention": prevention_text
+                 }
         st.session_state.history.append(result)
         save_to_csv(result)
         
