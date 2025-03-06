@@ -165,7 +165,7 @@ elif app_mode == "🔬 Disease Recognition":
     test_image = st.file_uploader("📤 Upload an Image:", type=["jpg", "png", "jpeg"])
     
     if test_image and st.button("🖼 Show Image"):
-        st.image(test_image, use_column_width=True)
+        st.image(test_image, use_container_width=True)
     
     if test_image and st.button("🔍 Predict"):
         with st.spinner("🧠 Analyzing... Please wait..."):
