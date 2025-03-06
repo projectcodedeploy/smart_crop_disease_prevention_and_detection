@@ -113,7 +113,21 @@ prevention_data = {
     "Tomato___Spider_mites_Two-spotted_spider_mite": "Introduce natural predators like ladybugs and use neem oil.",
     "Tomato___Target_Spot": "Apply copper-based fungicides and avoid excessive moisture.",
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "Use insect netting to prevent whitefly transmission and plant resistant varieties.",
-    "Tomato___Tomato_mosaic_virus": "Disinfect tools and hands; avoid tobacco products near tomato plants."
+    "Tomato___Tomato_mosaic_virus": "Disinfect tools and hands; avoid tobacco products near tomato plants.",
+    "Apple___healthy": "Maintain proper pruning, irrigation, and pest control to ensure tree health.",
+    "Blueberry___healthy": "Ensure acidic soil conditions and mulch regularly to retain moisture.",
+    "Cherry_(including_sour)___healthy": "Prune trees to improve air circulation and prevent fungal infections.",
+    "Corn_(maize)___healthy": "Rotate crops and ensure balanced fertilization to prevent soil depletion.",
+    "Grape___healthy": "Regularly prune vines and use drip irrigation to avoid excess moisture on leaves.",
+    "Peach___healthy": "Monitor for pests and provide proper fertilization for strong growth.",
+    "Pepper,_bell___healthy": "Ensure well-draining soil and avoid overwatering to prevent root diseases.",
+    "Potato___healthy": "Use disease-free seed potatoes and practice crop rotation.",
+    "Raspberry___healthy": "Prune old canes and remove debris to prevent fungal infections.",
+    "Soybean___healthy": "Plant in well-drained soil and ensure proper spacing to reduce disease risks.",
+    "Strawberry___healthy": "Use straw mulch to keep fruits off the soil and reduce fungal infections.",
+    "Tomato___healthy": "Maintain proper spacing, support plants with stakes, and ensure good airflow.",
+    "Tomato___Spider_mites_Two-spotted_spider_mite": "Introduce natural predators like ladybugs and use neem oil."
+
 }
 
 # Initialize session state
@@ -130,7 +144,7 @@ app_mode = st.sidebar.radio("Select Page", ["🏠 Home", "ℹ️ About", "🔬 D
 # Home Page
 if app_mode == "🏠 Home":
     st.markdown('<h1 class="main-title">🌱 PLANT DISEASE RECOGNITION SYSTEM 🌱</h1>', unsafe_allow_html=True)
-    st.image("home_page.jpeg", use_container_width=True)
+    st.image("home_page.jpeg", use_column_width=True)
     st.markdown('<h3 style="text-align: center;">🚀 *Upload an image to detect plant diseases!*</h3>', unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center;'>🚀 *Identify plant diseases and get prevention strategies instantly!*</h3>",unsafe_allow_html=True)
 
@@ -177,8 +191,8 @@ elif app_mode == "🔬 Disease Recognition":
                 4: "Blueberry___healthy",
                 5: "Cherry_(including_sour)___Powdery_mildew",
                 6: "Cherry_(including_sour)___healthy",
-                7: "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
-                8: "Corn_(maize)___Common_rust_",
+                7: "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot",
+                8: "Corn_(maize)___Common_rust",
                 9: "Corn_(maize)___Northern_Leaf_Blight",
                 10: "Corn_(maize)___healthy",
                 11: "Grape___Black_rot",
@@ -203,7 +217,7 @@ elif app_mode == "🔬 Disease Recognition":
                 30: "Tomato___Late_blight",
                 31: "Tomato___Leaf_Mold",
                 32: "Tomato___Septoria_leaf_spot",
-                33: "Tomato___Spider_mites Two-spotted_spider_mite",
+                33: "Tomato___Spider_mites_Two-spotted_spider_mite",
                 34: "Tomato___Target_Spot",
                 35: "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
                 36: "Tomato___Tomato_mosaic_virus",
