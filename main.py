@@ -144,7 +144,7 @@ app_mode = st.sidebar.radio("Select Page", ["🏠 Home", "ℹ️ About", "🔬 D
 # Home Page
 if app_mode == "🏠 Home":
     st.markdown('<h1 class="main-title">🌱 PLANT DISEASE RECOGNITION SYSTEM 🌱</h1>', unsafe_allow_html=True)
-    st.image("home_page.jpeg", use_container_width=True)
+    st.image("home_page.jpeg", use_column_width=True)
     st.markdown('<h3 style="text-align: center;">🚀 *Upload an image to detect plant diseases!*</h3>', unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center;'>🚀 *Identify plant diseases and get prevention strategies instantly!*</h3>",unsafe_allow_html=True)
 
@@ -247,7 +247,7 @@ elif app_mode == "🔬 Disease Recognition":
 
 
         result = {
-                "Image": test_image,
+                "Image": test_image.name,
                 "Prediction": disease_name,
                 "Prevention": prevention_text
             }
