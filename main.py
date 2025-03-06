@@ -243,7 +243,7 @@ elif app_mode == "🔬 Disease Recognition":
             st.error("No image uploaded. Please upload an image.")
 
         result = {
-                    "Image": test_image.name,
+                    "Image": image_name,
                     "Prediction": disease_name,
                     "Prevention": prevention_text
                  }
