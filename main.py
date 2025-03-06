@@ -10,17 +10,7 @@ st.set_page_config(page_title="Plant Disease Recognition 🌱", page_icon="🌿"
 # Custom CSS for Styling
 # Custom CSS for Styling & Centering Buttons
 
-st.markdown("""
-    <style>
-        body, .stApp {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .stSidebar {
-            background-color: #1E1E1E;
-        }
-    </style>
-""", unsafe_allow_html=True)
+
 
 st.markdown("""
     <style>
