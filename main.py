@@ -152,7 +152,7 @@ elif app_mode == "ℹ️ About":
 ✅ User-friendly Web Interface – Designed for farmers, researchers, and agronomists.\n
 
 🛠 Technology Used\n
-Deep Learning Model: MobileNetV2 (CNN) – Optimized for plant disease detection.\n
+Deep Learning Model:CNN – Optimized for plant disease detection.\n
 Framework: TensorFlow/Keras for AI modeling, OpenCV for image processing.\n
 Web App: Streamlit for an intuitive user experience.\n
 Deployment: Cloud or local-based system for scalability.\n
